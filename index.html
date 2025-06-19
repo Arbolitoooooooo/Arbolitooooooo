@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Biblioteca</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sistema de tienda</h1>
+
+  <form id="libroForm">
+    <input type="text" id="producto" placeholder="producto" required />
+    <input type="text" id="sabor" placeholder="sabor" required />
+    <input type="number" id="cantidad" placeholder="cantidad" required />
+    <input type="text" id="bebida" placeholder="bebida" required />
+    <button type="submit">Guardar</button>
+  </form>
+
+  <input type="text" id="buscarInput" placeholder="Buscar producto" />
+  <button onclick="buscarLibro()">Buscar</button>
+
+  <div id="lista de productos"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

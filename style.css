@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e665db;+
+  padding: 20px;
+  color: #f0ccef;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #edabf2;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  background-color: #ecacd8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(138, 255, 220,0.1);
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffa8e8;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #ffb3eb;
+  color: #e87dd1;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e26fc3;
+}
+
+/* Lista de libros */
+#librosList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 10px;
+}
+
+.card {
+  background-color: #e47cb9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgb(254, 144, 225,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #e160b8;
+}
+
+.card p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #f782cc;
+}
+
+.card button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button.edit {
+  background-color: #ac3e3e;
+  color: #ac2a2a;
+}
+
+.card button.delete {
+  background-color: #ab332b;
+  color: #c33c3c;
+}
+
+.card button.edit:hover {
+  background-color: #b13e3e;
+}
+
+.card button.delete:hover {
+  background-color: #c34037;
+}
+
+/* Buscador */
+#buscador {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  display: flex;
+}
+
+#buscador input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #9a3c3c;
+  border-radius: 5px 0 0 5px;
+}
+
+#buscador button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ae4c4c;
+  color: #aa4141;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+#buscador button:hover {
+  background-color: #a14545;
+}
